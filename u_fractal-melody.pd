@@ -1,4 +1,4 @@
-#N canvas 142 48 782 616 10;
+#N canvas 141 48 782 616 10;
 #X obj 13 67 inlet newnotes;
 #X obj 12 533 outlet;
 #X text 138 201 for 16 beats play through the four notes;
@@ -39,6 +39,7 @@
 #X obj 208 361 u_seededrandom 2 \$3;
 #X obj 209 275 u_seededrandom 3 \$3;
 #X obj 55 286 u_seededrandom 16 \$3;
+#X obj 128 111 + 1;
 #X connect 0 0 28 0;
 #X connect 3 0 4 0;
 #X connect 4 0 5 0;
@@ -79,7 +80,7 @@
 #X connect 28 0 10 0;
 #X connect 28 1 21 0;
 #X connect 29 0 31 0;
-#X connect 30 0 25 1;
+#X connect 30 0 39 0;
 #X connect 31 0 33 0;
 #X connect 32 0 30 0;
 #X connect 33 0 34 1;
@@ -88,3 +89,4 @@
 #X connect 36 0 20 0;
 #X connect 37 0 9 0;
 #X connect 38 0 26 1;
+#X connect 39 0 25 1;
