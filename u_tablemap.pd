@@ -1,8 +1,8 @@
-#N canvas 324 271 450 300 10;
+#N canvas 322 261 450 300 10;
 #X text 9 8 map table to multiple ui elements;
-#N canvas 656 338 450 300 \$0/connectors 0;
+#N canvas 654 328 450 300 \$0/connectors 0;
 #X restore 12 77 pd \$0/connectors;
-#N canvas 98 89 450 569 init 0;
+#N canvas 97 84 450 569 init 0;
 #X msg 12 31 bang;
 #X obj 12 9 loadbang;
 #X obj 31 75 \$0;
@@ -25,7 +25,7 @@
 #X obj 39 268 * 30;
 #X obj 12 400 list append \$1;
 #X msg 12 420 \; pd-\$3/connectors obj 10 \$2 u_tableconnect \$6 \$7
-\$4/\$1 \$5/\$1 \$1 \$8;
+\$1/\$4 \$1/\$5 \$1 \$8;
 #X connect 0 0 5 0;
 #X connect 1 0 0 0;
 #X connect 2 0 3 0;
