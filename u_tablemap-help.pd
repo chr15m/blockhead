@@ -1,0 +1,19 @@
+#N canvas 699 204 450 300 10;
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array data 5 float 1;
+#A 0 0 0 0 0 0;
+#X coords 0 1 4 0 200 140 1 0 0;
+#X restore 22 149 graph;
+#X obj 28 71 tgl 32 0 \$0/tog/0 \$0/tog/r/0 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 68 71 tgl 32 0 \$0/tog/1 \$0/tog/r/1 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 108 71 tgl 32 0 \$0/tog/2 \$0/tog/r/2 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 148 71 tgl 32 0 \$0/tog/3 \$0/tog/r/3 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 188 71 tgl 32 0 \$0/tog/4 \$0/tog/r/4 empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 9 113 u_tablemap 5 \$0/tog/r \$0/tog data data;
+#X msg 67 27 \; data 0 1 0 1 0 1;
+#X text 38 2 map ui elements to a table;
