@@ -1,0 +1,36 @@
+#N canvas 692 246 450 300 10;
+#X msg 306 70 bpm 180;
+#X floatatom 162 223 5 0 0 0 - #0/tick -, f 5;
+#X msg 305 126 multiple 2;
+#X floatatom 205 223 5 0 0 0 - - -, f 5;
+#X text 303 50 settings;
+#X msg 305 153 multiple 4;
+#X obj 205 242 spigot 0;
+#X obj 205 264 print;
+#X obj 250 222 tgl 15 0 empty empty print 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 205 196 u_tick-multiplier 180 1;
+#X msg 305 102 multiple 1;
+#X obj 26 72 metro 333.333;
+#X obj 26 53 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+;
+#X obj 26 94 f;
+#X obj 56 94 + 1;
+#X obj 26 116 s \$0/tick;
+#X obj 205 114 r \$0/tick;
+#X text 24 8 metronome tick multiplier / frequency divider (more ticks
+per tick), f 46;
+#X connect 0 0 9 0;
+#X connect 2 0 9 0;
+#X connect 3 0 6 0;
+#X connect 5 0 9 0;
+#X connect 6 0 7 0;
+#X connect 8 0 6 1;
+#X connect 9 0 3 0;
+#X connect 10 0 9 0;
+#X connect 11 0 13 0;
+#X connect 12 0 11 0;
+#X connect 13 0 14 0;
+#X connect 13 0 15 0;
+#X connect 14 0 13 1;
+#X connect 16 0 9 0;
