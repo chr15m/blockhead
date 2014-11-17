@@ -1,0 +1,33 @@
+#N canvas 169 260 450 405 10;
+#X text 10 8 connect a table to a single ui element or numbered send/receive
+pair. assumes sendname/X receivename/X where X is the index into the
+table.;
+#X obj 14 120 r \$1;
+#X obj 335 125 r \$4;
+#X obj 335 173 s \$2;
+#X obj 14 143 list split 1;
+#X obj 48 189 list length;
+#X obj 48 212 sel \$6;
+#X obj 48 254 list;
+#X obj 48 277 list split \$5;
+#X obj 85 300 list split 1;
+#X obj 123 255 u_default \$5;
+#X obj 48 166 t a a;
+#X obj 85 345 s \$3;
+#X msg 85 322 set \$1;
+#X obj 335 147 list prepend \$5;
+#X text 15 66 args: X/receivename X/sendname table-receive table-send
+index length;
+#X connect 1 0 4 0;
+#X connect 2 0 14 0;
+#X connect 4 1 11 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 1 9 0;
+#X connect 9 0 13 0;
+#X connect 10 0 8 1;
+#X connect 11 0 5 0;
+#X connect 11 1 7 1;
+#X connect 13 0 12 0;
+#X connect 14 0 3 0;

@@ -1,0 +1,17 @@
+#N canvas 594 255 450 300 10;
+#X obj 35 82 u_tablelist bob;
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array bob 10 float 3;
+#A 0 0.342856 -0.214285 -0.371428 0.771427 -1.17143 -0.399999 -0.942855
+0.614284 0.128571 -0.599999;
+#X coords 0 1 9 -1 200 140 1;
+#X restore 196 68 graph;
+#X msg 35 60 bang;
+#X obj 35 104 list prepend set;
+#X msg 35 148;
+#X text 34 25 turn a table into a list;
+#X obj 35 126 list trim;
+#X connect 0 0 3 0;
+#X connect 2 0 0 0;
+#X connect 3 0 6 0;
+#X connect 6 0 4 0;
