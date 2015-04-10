@@ -1,0 +1,17 @@
+#N canvas 525 630 450 300 10;
+#X obj 89 159 e_foldover;
+#X obj 149 138 hsl 128 15 1 20 0 0 empty empty 1->20 -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 89 231 dac~;
+#X obj 89 201 *~;
+#X obj 107 181 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 90 88 osc~ 440;
+#X text 15 12 Rebirth style foldover distortion. Squelches up acid
+nicely.;
+#X connect 0 0 3 0;
+#X connect 1 0 0 1;
+#X connect 3 0 2 0;
+#X connect 3 0 2 1;
+#X connect 4 0 3 1;
+#X connect 5 0 0 0;
