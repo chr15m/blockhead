@@ -1,0 +1,21 @@
+#N canvas 774 162 450 300 10;
+#X text 10 8 Count the number of instances of myself with my argument.
+Resets when all instances with the same arugment are deleted.;
+#X floatatom 15 80 5 0 0 0 - - -;
+#X floatatom 15 130 5 0 0 0 - - -;
+#X floatatom 15 180 5 0 0 0 - - -;
+#X floatatom 195 80 5 0 0 0 - - -;
+#X floatatom 195 130 5 0 0 0 - - -;
+#X floatatom 195 180 5 0 0 0 - - -;
+#X obj 195 158 u_instance-counter jim;
+#X obj 15 58 u_instance-counter bob;
+#X obj 15 108 u_instance-counter bob;
+#X obj 15 158 u_instance-counter bob;
+#X obj 195 58 u_instance-counter jim;
+#X obj 195 108 u_instance-counter jim;
+#X connect 7 0 6 0;
+#X connect 8 0 1 0;
+#X connect 9 0 2 0;
+#X connect 10 0 3 0;
+#X connect 11 0 4 0;
+#X connect 12 0 5 0;
