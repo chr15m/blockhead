@@ -1,5 +1,5 @@
-#N canvas 697 187 450 300 10;
-#X obj 118 176 hsl 128 15 0 2 0 0 empty empty en-loudenate -2 -8 0
+#N canvas 696 182 450 300 10;
+#X obj 118 176 hsl 128 15 0 2 0 1 empty empty en-loudenate -2 -8 0
 10 -262144 -1 -1 0 1;
 #X obj 34 251 dac~;
 #X text 32 70 args (optional): rise-time fall-time;
